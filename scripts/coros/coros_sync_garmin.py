@@ -5,9 +5,9 @@ CURRENT_DIR = os.path.split(os.path.abspath(__file__))[0]  # 当前目录
 config_path = CURRENT_DIR.rsplit('/', 1)[0]  # 上三级目录
 sys.path.append(config_path)
 
-from coros.coros_client import CorosClient
+from coros_client import CorosClient
 from config  import DB_DIR, COROS_FIT_DIR
-from coros.coros_db import CorosDB
+from coros_db import CorosDB
 from sqlite_db import SqliteDB
 from garmin.garmin_client import GarminClient
 
